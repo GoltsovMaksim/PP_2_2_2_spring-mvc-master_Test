@@ -5,6 +5,21 @@
     <title>Cars_my_servlet</title>
 </head>
 <body>
+<table border="2">
 
+    <caption>Table of cars</caption>
+    <tr>
+        <th>Developer</th>
+        <th>model</th>
+        <th>year of model</th>
+    </tr>
+
+    <tr th:each="lst : ${listOfCar}">
+        <td th:utext="${lst.developer}"></td>
+        <td th:utext="${lst.model}"></td>
+        <td th:utext="${lst.yearOfModel}"></td>
+    </tr>
+
+</table>
 </body>
 </html>
