@@ -16,7 +16,6 @@ public class CarServiceImpl implements CarService {
         listOfCar.add(new Car("Subaru", "Impreza", 2007));
         listOfCar.add(new Car("Lada", "Priora", 2022));
         listOfCar.add(new Car("Land Rover", "Discovery", 2012));
-        listOfCar.add(new Car("Land Rover", "Discovery", 2012));
     }
 
     public static List<Car> getListedCars(int numberOfCar) {
