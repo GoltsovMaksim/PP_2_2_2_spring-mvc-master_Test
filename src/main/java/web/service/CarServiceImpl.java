@@ -7,10 +7,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CarServiceImpl implements CarService {
-    private static List<Car> listOfCar;
+    private static final List<Car> listOfCar =new ArrayList<>();
 
-    public static void setListOfCar() {
-        listOfCar = new ArrayList<>();
+    static {
         listOfCar.add(new Car("Toyota", "Trueno", 1999));
         listOfCar.add(new Car("Nissan", "Sunny", 2001));
         listOfCar.add(new Car("Subaru", "Impreza", 2007));
@@ -18,7 +17,7 @@ public class CarServiceImpl implements CarService {
         listOfCar.add(new Car("Land Rover", "Discovery", 2012));
     }
 
-    public static List<Car> getListedCars(int numberOfCar) {
+    public List<Car> getListedCars(int numberOfCar) {
         if (numberOfCar <= 0 || numberOfCar > 5) {
             return listOfCar;
         }
