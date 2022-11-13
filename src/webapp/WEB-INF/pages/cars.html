@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">>
 <head>
     <meta charset="UTF-8">
     <title>Cars_my_servlet</title>
+
+    <style>
+        TABLE {
+            border: 3px solid black;
+            width: 300px;
+            border-collapse: collapse;
+        }
+
+        TD, TH {
+            padding: 4px;
+            border: 1px dashed darkred;
+        }
+
+        TH {
+            background: #33ffd6;
+        }
+    </style>
+
 </head>
 <body>
-<table border="2">
+<table>
 
     <caption>Table of cars</caption>
     <tr>
