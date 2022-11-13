@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Cars_my_servlet</title>
@@ -27,15 +27,17 @@
 
     <caption>Table of cars</caption>
     <tr>
+        <th>Id</th>
         <th>Developer</th>
         <th>model</th>
         <th>year of model</th>
     </tr>
 
-    <tr th:each="lst : ${listOfCar}">
-        <td th:utext="${lst.developer}"></td>
-        <td th:utext="${lst.model}"></td>
-        <td th:utext="${lst.yearOfModel}"></td>
+    <tr th:each="car : ${listOfCar}">
+        <td th:utext="${car.id}">id</td>
+        <td th:utext="${car.developer}">developer</td>
+        <td th:utext="${car.model}">model</td>
+        <td th:utext="${car.yearOfModel}">year</td>
     </tr>
 
 </table>

@@ -1,41 +1,5 @@
 package web.model;
 
-public class Car {
-
-    private int id;
-    private String developer;
-    private String model;
-    private int yearOfModel;
-
-    public Car(int id, String developer, String model, int yearOfModel) {
-        this.id=id;
-        this.developer = developer;
-        this.model = model;
-        this.yearOfModel = yearOfModel;
-    }
-
-    public String getDeveloper() {
-        return developer;
-    }
-
-    public void setDeveloper(String developer) {
-        this.developer = developer;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getYearOfModel() {
-        return yearOfModel;
-    }
-
-    public void setYearOfModel(int yearOfModel) {
-        this.yearOfModel = yearOfModel;
-    }
+public record Car(int id, String developer, String model, int yearOfModel) {
 
 }
