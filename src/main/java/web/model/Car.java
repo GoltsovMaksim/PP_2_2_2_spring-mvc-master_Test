@@ -1,11 +1,14 @@
 package web.model;
 
 public class Car {
+
+    private int id;
     private String developer;
     private String model;
     private int yearOfModel;
 
-    public Car(String developer, String model, int yearOfModel) {
+    public Car(int id, String developer, String model, int yearOfModel) {
+        this.id=id;
         this.developer = developer;
         this.model = model;
         this.yearOfModel = yearOfModel;
